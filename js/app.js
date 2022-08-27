@@ -365,35 +365,114 @@ window.infoSagitario = function (contenedor) {
 
 let formFecha = document.querySelector("#formFecha");
 let selectFecha = document.querySelector("#fechaNacimiento");
-let infoFecha = document.querySelector('#infoFecha')
+let infoFecha = document.querySelector("#infoFecha");
+
+let formElemento = document.querySelector("#formElemento");
+let selectElemento = document.querySelector("#selectElemento");
+let infoElemento = document.querySelector("#infoElemento");
 
 formFecha.addEventListener("submit", mostrarSigno);
+
+formElemento.addEventListener("submit", mostrarElemento);
 
 function mostrarSigno(e) {
   e.preventDefault();
   if (selectFecha.value == 1) {
-    infoCapricornio(infoFecha)
-  }else if(selectFecha.value == 2){
-    infoAcuario(infoFecha)
-  }else if (selectFecha.value == 3){
-    infoPiscis(infoFecha)
-  }else if (selectFecha.value == 4){
-    infoAries(infoFecha)
-  }else if (selectFecha.value == 5){
-    infoTauro(infoFecha)
-  }else if (selectFecha.value == 6){
-    infoGeminis(infoFecha)
-  }else if (selectFecha.value == 7){
-    infoCancer(infoFecha)
-  }else if (selectFecha.value == 8){
-    infoLeo(infoFecha)
-  }else if (selectFecha.value == 9){
-    infoVirgo(infoFecha)
-  }else if (selectFecha.value == 10){
-    infoLibra(infoFecha)
-  }else if (selectFecha.value == 11){
-    infoEscorpio(infoFecha)
-  }else if (selectFecha.value == 12){
-    infoSagitario(infoFecha)
+    infoCapricornio(infoFecha);
+  } else if (selectFecha.value == 2) {
+    infoAcuario(infoFecha);
+  } else if (selectFecha.value == 3) {
+    infoPiscis(infoFecha);
+  } else if (selectFecha.value == 4) {
+    infoAries(infoFecha);
+  } else if (selectFecha.value == 5) {
+    infoTauro(infoFecha);
+  } else if (selectFecha.value == 6) {
+    infoGeminis(infoFecha);
+  } else if (selectFecha.value == 7) {
+    infoCancer(infoFecha);
+  } else if (selectFecha.value == 8) {
+    infoLeo(infoFecha);
+  } else if (selectFecha.value == 9) {
+    infoVirgo(infoFecha);
+  } else if (selectFecha.value == 10) {
+    infoLibra(infoFecha);
+  } else if (selectFecha.value == 11) {
+    infoEscorpio(infoFecha);
+  } else if (selectFecha.value == 12) {
+    infoSagitario(infoFecha);
+  }
+}
+
+function mostrarElemento(e) {
+  e.preventDefault();
+  if (selectElemento.value == "agua") {
+    let textAgua = `<div class="row">
+          <aside class="col-sm-12 col-md-4 col-lg-4">
+              <img src="img/elementos/agua.png" alt="Agua" class="w-100">
+          </aside>
+          <aside class="col-sm-12 col-md-4 col-lg-4 text-center"><ul>
+              <li class="mt-5"><h3>Cancer</h3></li>
+              <li class="my-4"><h3>Escorpio</h3></li>
+              <li><h3>Piscis</h3></li>
+          </ul></aside>
+          <aside class="col-sm-12 col-md-4 col-lg-4"><h4>Los empáticos: Las personas agua se caracterizan por aportar amor, protección, vida, sensibilidad y empatía. Además, el agua se caracteriza por purificar, limpiar, dar vida y devolver la paz. También son intuitivos, compasivos y resonantes. Se comprometen en sus relaciones personales y en sus proyectos. Sin embargo, son personas influenciables y apegados.</h4></aside>
+          <div><button class="btn btn-danger" onclick="ocultar()">Ocultar</button></div>
+          </div>`;
+    infoElemento.innerHTML += textAgua;
+    window.ocultar = function () {
+      infoElemento.removeChild(infoElemento.children[0]);
+    };
+  } else if (selectElemento.value == "fuego") {
+    let textFuego = `<div class="row">
+          <aside class="col-sm-12 col-md-4 col-lg-4">
+              <img src="img/elementos/fuego.png" alt="fuego" class="w-100">
+          </aside>
+          <aside class="col-sm-12 col-md-4 col-lg-4 text-center"><ul>
+              <li class="mt-5"><h3>Aries</h3></li>
+              <li class="my-3"><h3>Leo</h3></li>
+              <li><h3>Sagitario</h3></li>
+          </ul></aside>
+          <aside class="col-sm-12 col-md-4 col-lg-4"><h4>Los pasionales: Las personas fuego se caracterizan por ser fuente de luz. Siempre están activos y vitales. Aportan pasión y, además, alegría. Asimismo, tienen un estilo histriónico lo cual llama la atención de las demás personas. También son creativos, expresivos, sinceros y son capaces de mostrar el camino correcto.</h4></aside>
+          <div><button class="btn btn-danger" onclick="ocultar()">Ocultar</button></div>
+          </div>`;
+    infoElemento.innerHTML += textFuego;
+    window.ocultar = function () {
+      infoElemento.removeChild(infoElemento.children[0]);
+    };
+  } else if (selectElemento.value == "tierra") {
+    let textTierra = `<div class="row">
+          <aside class="col-sm-12 col-md-4 col-lg-4">
+              <img src="img/elementos/tierra.png" alt="tierra" class="w-100">
+          </aside>
+          <aside class="col-sm-12 col-md-4 col-lg-4 text-center"><ul>
+              <li class="mt-5"><h3>Tauro</h3></li>
+              <li class="my-3"><h3>Virgo</h3></li>
+              <li><h3>Capricornio</h3></li>
+          </ul></aside>
+          <aside class="col-sm-12 col-md-4 col-lg-4"><h4>Los sensatos: Las persona tierra se caracterizan por ser estables y seguros. Estas personas aportan estabilidad y compromiso. Su ser es completo y le permite el crecimiento en cualquier ámbito. Además, son realistas, organizados, perseverantes y sensatos. Sin embargo, son personas muy reservadas, observadoras y calladas por lo que les cuesta mucho expresar lo que sienten.</h4></aside>
+          <div><button class="btn btn-danger" onclick="ocultar()">Ocultar</button></div>
+          </div>`;
+    infoElemento.innerHTML += textTierra;
+    window.ocultar = function () {
+      infoElemento.removeChild(infoElemento.children[0]);
+    };
+  } else if (selectElemento.value == "aire") {
+    let textAire = `<div class="row">
+          <aside class="col-sm-12 col-md-4 col-lg-4">
+              <img src="img/elementos/aire.png" alt="aire" class="w-100">
+          </aside>
+          <aside class="col-sm-12 col-md-4 col-lg-4 text-center"><ul>
+              <li class="mt-5"><h3>Geminis</h3></li>
+              <li class="my-4"><h3>Libra</h3></li>
+              <li><h3>Acuario</h3></li>
+          </ul></aside>
+          <aside class="col-sm-12 col-md-4 col-lg-4"><h4>Los visionarios: Las personas aire se identifican por ser ligeros, sutiles, sociales y ágiles. Tienen una mirada impactante. Son comunicativos y la sabiduría, los sonidos y las palabras de alientos son sus fortalezas. Valoran el equipo en trabajo y son visionarios. Tienen una mente abierta lo cual les permite analizar con mayor claridad las diferentes situaciones que deben vivir.</h4></aside>
+          <div><button class="btn btn-danger" onclick="ocultar()">Ocultar</button></div>
+          </div>`;
+    infoElemento.innerHTML += textAire;
+    window.ocultar = function () {
+      infoElemento.removeChild(infoElemento.children[0]);
+    };
   }
 }

@@ -41,7 +41,10 @@
                 src="/img/horoscopo-capricornio.jpg"
                 alt="Capricornio"
                 class="img-fluid mb-2"
-              /><button class="btn btn-danger" onclick="infoCapricornio(infoSigno)">
+              /><button
+                class="btn btn-danger"
+                onclick="infoCapricornio(infoSigno)"
+              >
                 Consultar
               </button>
             </div>
@@ -131,7 +134,10 @@
                 src="/img/horoscopo-escorpio.jpg"
                 alt="Escorpio"
                 class="img-fluid"
-              /><button class="btn btn-danger" onclick="infoEscorpio(infoSigno)">
+              /><button
+                class="btn btn-danger"
+                onclick="infoEscorpio(infoSigno)"
+              >
                 Consultar
               </button>
             </div>
@@ -140,7 +146,10 @@
                 src="/img/horoscopo-sagitario.jpg"
                 alt="Sagitario"
                 class="img-fluid"
-              /><button class="btn btn-danger" onclick="infoSagitario(infoSigno)">
+              /><button
+                class="btn btn-danger"
+                onclick="infoSagitario(infoSigno)"
+              >
                 Consultar
               </button>
             </div>
@@ -155,44 +164,54 @@
         >
           <aside class="mx-2">
             <form id="formFecha">
-                <select class="form-select" aria-label="fecha de nacimiento" id="fechaNacimiento">
-                  <option value="">Fecha de nacimiento</option>
-                  <option value="1">22/12 - 20/01</option>
-                  <option value="2">21/01 - 19/02</option>
-                  <option value="3">20/02 - 20/03</option>
-                  <option value="4">21/03 - 19/04</option>
-                  <option value="5">20/04 - 20/05</option>
-                  <option value="6">21/05 - 20/06</option>
-                  <option value="7">21/06 - 22/07</option>
-                  <option value="8">23/07 - 22/08</option>
-                  <option value="9">23/08 - 22/09</option>
-                  <option value="10">23/09 - 22/10</option>
-                  <option value="11">23/10 - 21/11</option>
-                  <option value="12">22/11 - 21/12</option>
-                </select>
-                <button class="btn btn-danger my-2" type="submit"> Enviar</button>
+              <select
+                class="form-select"
+                aria-label="fecha de nacimiento"
+                id="fechaNacimiento"
+              >
+                <option value="">Fecha de nacimiento</option>
+                <option value="1">22/12 - 20/01</option>
+                <option value="2">21/01 - 19/02</option>
+                <option value="3">20/02 - 20/03</option>
+                <option value="4">21/03 - 19/04</option>
+                <option value="5">20/04 - 20/05</option>
+                <option value="6">21/05 - 20/06</option>
+                <option value="7">21/06 - 22/07</option>
+                <option value="8">23/07 - 22/08</option>
+                <option value="9">23/08 - 22/09</option>
+                <option value="10">23/09 - 22/10</option>
+                <option value="11">23/10 - 21/11</option>
+                <option value="12">22/11 - 21/12</option>
+              </select>
+              <button class="btn btn-danger my-2" type="submit">Enviar</button>
             </form>
           </aside>
         </article>
-        <article class="container" id="infoFecha">
-
-        </article>
+        <article class="container" id="infoFecha"></article>
       </section>
       <section class="container text-center mt-5">
         <h2>Buscar signos a traves de Elementos:</h2>
         <article
           class="container text-center mt-3 d-flex justify-content-center"
         >
-          <aside>
-            <select class="form-select" aria-label="elemento del horoscopo">
-              <option value="">Seleccione un elemento</option>
-              <option value="1">Agua</option>
-              <option value="2">Fuego</option>
-              <option value="3">Tierra</option>
-              <option value="4">Aire</option>
-            </select>
+          <aside class="mx-2">
+            <form id="formElemento">
+              <select
+                class="form-select"
+                aria-label="elemento del horoscopo"
+                id="selectElemento"
+              >
+                <option value="">Seleccione un elemento</option>
+                <option value="agua">Agua</option>
+                <option value="fuego">Fuego</option>
+                <option value="tierra">Tierra</option>
+                <option value="aire">Aire</option>
+              </select>
+              <button class="btn btn-danger my-2" type="submit">Enviar</button>
+            </form>
           </aside>
         </article>
+        <article class="container my-5" id="infoElemento"></article>
       </section>
     </main>
 
