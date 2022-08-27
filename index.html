@@ -29,66 +29,194 @@
     <title>Signos del Zodiaco</title>
   </head>
   <body class="">
-    <header>
-
-    </header>
+    <header></header>
 
     <main>
-<section class="container text-center mt-5">
-  <h1>Signos del Zodiaco</h1>
-  <article class="container text-center">
-    <div class="row row-cols-6">
-      <div class="col-lg-3 col-md-4 col-6"><img src="/img/horoscopo-capricornio.jpg" alt="Capricornio" class="img-fluid mb-2"><button class="btn btn-danger">Consultar</button></div>
-      <div class="col-lg-3 col-md-4 col-6"><img src="/img/horoscopo-acuario.jpg" alt="Acuario" class="img-fluid"><button class="btn btn-danger">Consultar</button></div>
-      <div class="col-lg-3 col-md-4 col-6"><img src="/img/horoscopo-piscis.jpg" alt="Piscis" class="img-fluid"><button class="btn btn-danger">Consultar</button></div>
-      <div class="col-lg-3 col-md-4 col-6"><img src="/img/horoscopo-aries.jpg" alt="Aries" class="img-fluid"><button class="btn btn-danger">Consultar</button></div>
-      <div class="col-lg-3 col-md-4 col-6"><img src="/img/Tauro-horoscopo.jpeg" alt="Tauro" class="img-fluid"><button class="btn btn-danger">Consultar</button></div>
-      <div class="col-lg-3 col-md-4 col-6"><img src="/img/horoscopo-geminis.jpg" alt="Geminis" class="img-fluid"><button class="btn btn-danger">Consultar</button></div>
-      <div class="col-lg-3 col-md-4 col-6"><img src="/img/horoscopo-cancerpng.webp" alt="Cancer" class="img-fluid"><button class="btn btn-danger">Consultar</button></div>
-      <div class="col-lg-3 col-md-4 col-6"><img src="/img/horoscopo-leo.jpg" alt="Leo" class="img-fluid"><button class="btn btn-danger">Consultar</button></div>
-      <div class="col-lg-3 col-md-4 col-6"><img src="/img/horoscopo-virgo.jpg" alt="Virgo" class="img-fluid"><button class="btn btn-danger">Consultar</button></div>
-      <div class="col-lg-3 col-md-4 col-6"><img src="/img/horoscopo-libra.jpg" alt="Libra" class="img-fluid"><button class="btn btn-danger">Consultar</button></div>
-      <div class="col-lg-3 col-md-4 col-6"><img src="/img/horoscopo-escorpio.jpg" alt="Escorpio" class="img-fluid"><button class="btn btn-danger">Consultar</button></div>
-      <div class="col-lg-3 col-md-4 col-6"><img src="/img/horoscopo-sagitario.jpg" alt="Sagitario" class="img-fluid"><button class="btn btn-danger">Consultar</button></div>
-    </div>
-  </article>
-</section>
-<section class="container text-center mt-5 d-flex justify-content-center">
-  <aside class="mx-2">
-    <select class="form-select" aria-label="Default select example">
-      <option selected>Fecha de nacimiento</option>
-      <option value="1">22/12 - 20/01</option>
-      <option value="2">21/01 - 19/02</option>
-      <option value="3">20/02 - 20/03</option>
-      <option value="4">21/03 - 19/04</option>
-      <option value="5">20/04 - 20/05</option>
-      <option value="6">21/05 - 20/06</option>
-      <option value="7">21/06 - 22/07</option>
-      <option value="8">23/07 - 22/08</option>
-      <option value="9">23/08 - 22/09</option>
-      <option value="10">23/09 - 22/10</option>
-      <option value="11">23/10 - 21/11</option>
-      <option value="12">22/11 - 21/12</option>
-    </select>
-  </aside>
-  <aside>
-    <select class="form-select" aria-label="Default select example">
-      <option selected>Seleccione un elemento</option>
-      <option value="1">Agua</option>
-      <option value="2">Fuego</option>
-      <option value="3">Tierra</option>
-      <option value="4">Aire</option>
-      </select>
-  </aside>
-  
-
-</section>
+      <section class="container text-center mt-5">
+        <h1>Signos del Zodiaco</h1>
+        <article class="container text-center">
+          <div class="row row-cols-6">
+            <div class="col-lg-3 col-md-4 col-6 mb-4">
+              <img
+                src="/img/horoscopo-capricornio.jpg"
+                alt="Capricornio"
+                class="img-fluid mb-2"
+              /><button
+                class="btn btn-danger"
+                onclick="infoCapricornio(infoSigno)"
+              >
+                Consultar
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 mb-4">
+              <img
+                src="/img/horoscopo-acuario.jpg"
+                alt="Acuario"
+                class="img-fluid"
+              /><button class="btn btn-danger" onclick="infoAcuario(infoSigno)">
+                Consultar
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 mb-4">
+              <img
+                src="/img/horoscopo-piscis.jpg"
+                alt="Piscis"
+                class="img-fluid"
+              /><button class="btn btn-danger" onclick="infoPiscis(infoSigno)">
+                Consultar
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 mb-4">
+              <img
+                src="/img/horoscopo-aries.jpg"
+                alt="Aries"
+                class="img-fluid"
+              /><button class="btn btn-danger" onclick="infoAries(infoSigno)">
+                Consultar
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 mb-4">
+              <img
+                src="/img/Tauro-horoscopo.jpeg"
+                alt="Tauro"
+                class="img-fluid"
+              /><button class="btn btn-danger" onclick="infoTauro(infoSigno)">
+                Consultar
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 mb-4">
+              <img
+                src="/img/horoscopo-geminis.jpg"
+                alt="Geminis"
+                class="img-fluid"
+              /><button class="btn btn-danger" onclick="infoGeminis(infoSigno)">
+                Consultar
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 mb-4">
+              <img
+                src="/img/horoscopo-cancerpng.webp"
+                alt="Cancer"
+                class="img-fluid"
+              /><button class="btn btn-danger" onclick="infoCancer(infoSigno)">
+                Consultar
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 mb-4">
+              <img
+                src="/img/horoscopo-leo.jpg"
+                alt="Leo"
+                class="img-fluid"
+              /><button class="btn btn-danger" onclick="infoLeo(infoSigno)">
+                Consultar
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 mb-4">
+              <img
+                src="/img/horoscopo-virgo.jpg"
+                alt="Virgo"
+                class="img-fluid"
+              /><button class="btn btn-danger" onclick="infoVirgo(infoSigno)">
+                Consultar
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 mb-4">
+              <img
+                src="/img/horoscopo-libra.jpg"
+                alt="Libra"
+                class="img-fluid"
+              /><button class="btn btn-danger" onclick="infoLibra(infoSigno)">
+                Consultar
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 mb-4">
+              <img
+                src="/img/horoscopo-escorpio.jpg"
+                alt="Escorpio"
+                class="img-fluid"
+              /><button
+                class="btn btn-danger"
+                onclick="infoEscorpio(infoSigno)"
+              >
+                Consultar
+              </button>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 mb-4">
+              <img
+                src="/img/horoscopo-sagitario.jpg"
+                alt="Sagitario"
+                class="img-fluid"
+              /><button
+                class="btn btn-danger"
+                onclick="infoSagitario(infoSigno)"
+              >
+                Consultar
+              </button>
+            </div>
+          </div>
+        </article>
+        <article class="container" id="infoSigno"></article>
+      </section>
+      <section class="container text-center mt-5">
+        <h2>Buscar un signo por fecha de nacimiento:</h2>
+        <article
+          class="container text-center mt-3 d-flex justify-content-center"
+        >
+          <aside class="mx-2">
+            <form id="formFecha">
+              <select
+                class="form-select"
+                aria-label="fecha de nacimiento"
+                id="fechaNacimiento"
+              >
+                <option value="">Fecha de nacimiento</option>
+                <option value="1">22/12 - 20/01</option>
+                <option value="2">21/01 - 19/02</option>
+                <option value="3">20/02 - 20/03</option>
+                <option value="4">21/03 - 19/04</option>
+                <option value="5">20/04 - 20/05</option>
+                <option value="6">21/05 - 20/06</option>
+                <option value="7">21/06 - 22/07</option>
+                <option value="8">23/07 - 22/08</option>
+                <option value="9">23/08 - 22/09</option>
+                <option value="10">23/09 - 22/10</option>
+                <option value="11">23/10 - 21/11</option>
+                <option value="12">22/11 - 21/12</option>
+              </select>
+              <button class="btn btn-danger my-2" type="submit">Enviar</button>
+            </form>
+          </aside>
+        </article>
+        <article class="container" id="infoFecha"></article>
+      </section>
+      <section class="container text-center mt-5">
+        <h2>Buscar signos a traves de Elementos:</h2>
+        <article
+          class="container text-center mt-3 d-flex justify-content-center"
+        >
+          <aside class="mx-2">
+            <form id="formElemento">
+              <select
+                class="form-select"
+                aria-label="elemento del horoscopo"
+                id="selectElemento"
+              >
+                <option value="">Seleccione un elemento</option>
+                <option value="agua">Agua</option>
+                <option value="fuego">Fuego</option>
+                <option value="tierra">Tierra</option>
+                <option value="aire">Aire</option>
+              </select>
+              <button class="btn btn-danger my-2" type="submit">Enviar</button>
+            </form>
+          </aside>
+        </article>
+        <article class="container my-5" id="infoElemento"></article>
+      </section>
     </main>
 
     <footer class="container text-center mt-5">
-<p>
-  &copy; Todos los derechos reservados
-</p>
+      <p>&copy; Todos los derechos reservados</p>
     </footer>
 
     <script
