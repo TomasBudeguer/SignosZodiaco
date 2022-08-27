@@ -1,4 +1,4 @@
-window.infoCapricornio = function () {
+window.infoCapricornio = function (contenedor) {
   let infoSigno = document.querySelector("#infoSigno");
   let textCapricornio = `<div class="mt-3">
 <div class="card mb-3">
@@ -28,14 +28,13 @@ window.infoCapricornio = function () {
         </div>
 <button class="btn btn-danger" onclick="ocultar()">Ocultar</button>
 </div>`;
-  infoSigno.innerHTML += textCapricornio;
-  console.log(infoSigno.children[0]);
+  contenedor.innerHTML += textCapricornio;
   window.ocultar = function () {
-    infoSigno.removeChild(infoSigno.children[0]);
+    contenedor.removeChild(contenedor.children[0]);
   };
 };
 
-window.infoAcuario = function () {
+window.infoAcuario = function (contenedor) {
   let infoSigno = document.querySelector("#infoSigno");
   let textAcuario = `<div class="mt-3">
 <div class="card mb-3">
@@ -59,13 +58,13 @@ window.infoAcuario = function () {
         </div>
 <button class="btn btn-danger" onclick="ocultar()">Ocultar</button>
 </div>`;
-  infoSigno.innerHTML += textAcuario;
+  contenedor.innerHTML += textAcuario;
   window.ocultar = function () {
-    infoSigno.removeChild(infoSigno.children[0]);
+    contenedor.removeChild(contenedor.children[0]);
   };
 };
 
-window.infoPiscis = function () {
+window.infoPiscis = function (contenedor) {
   let infoSigno = document.querySelector("#infoSigno");
   let textPiscis = `<div class="mt-3">
   <div class="card mb-3">
@@ -89,13 +88,13 @@ window.infoPiscis = function () {
           </div>
   <button class="btn btn-danger" onclick="ocultar()">Ocultar</button>
   </div>`;
-  infoSigno.innerHTML += textPiscis;
+  contenedor.innerHTML += textPiscis;
   window.ocultar = function () {
-    infoSigno.removeChild(infoSigno.children[0]);
+    contenedor.removeChild(contenedor.children[0]);
   };
 };
 
-window.infoAries = function () {
+window.infoAries = function (contenedor) {
   let infoSigno = document.querySelector("#infoSigno");
   let textAries = `<div class="mt-3">
   <div class="card mb-3">
@@ -119,13 +118,13 @@ window.infoAries = function () {
           </div>
   <button class="btn btn-danger" onclick="ocultar()">Ocultar</button>
   </div>`;
-  infoSigno.innerHTML += textAries;
+  contenedor.innerHTML += textAries;
   window.ocultar = function () {
-    infoSigno.removeChild(infoSigno.children[0]);
+    contenedor.removeChild(contenedor.children[0]);
   };
 };
 
-window.infoTauro = function () {
+window.infoTauro = function (contenedor) {
   let infoSigno = document.querySelector("#infoSigno");
   let textTauro = `<div class="mt-3">
     <div class="card mb-3">
@@ -149,13 +148,13 @@ window.infoTauro = function () {
             </div>
     <button class="btn btn-danger" onclick="ocultar()">Ocultar</button>
     </div>`;
-  infoSigno.innerHTML += textTauro;
+  contenedor.innerHTML += textTauro;
   window.ocultar = function () {
-    infoSigno.removeChild(infoSigno.children[0]);
+    contenedor.removeChild(contenedor.children[0]);
   };
 };
 
-window.infoGeminis = function () {
+window.infoGeminis = function (contenedor) {
   let infoSigno = document.querySelector("#infoSigno");
   let textGeminis = `<div class="mt-3">
       <div class="card mb-3">
@@ -179,13 +178,13 @@ window.infoGeminis = function () {
               </div>
       <button class="btn btn-danger" onclick="ocultar()">Ocultar</button>
       </div>`;
-  infoSigno.innerHTML += textGeminis;
+  contenedor.innerHTML += textGeminis;
   window.ocultar = function () {
-    infoSigno.removeChild(infoSigno.children[0]);
+    contenedor.removeChild(contenedor.children[0]);
   };
 };
 
-window.infoCancer = function () {
+window.infoCancer = function (contenedor) {
   let infoSigno = document.querySelector("#infoSigno");
   let textCancer = `<div class="mt-3">
       <div class="card mb-3">
@@ -209,13 +208,13 @@ window.infoCancer = function () {
               </div>
       <button class="btn btn-danger" onclick="ocultar()">Ocultar</button>
       </div>`;
-  infoSigno.innerHTML += textCancer;
+  contenedor.innerHTML += textCancer;
   window.ocultar = function () {
-    infoSigno.removeChild(infoSigno.children[0]);
+    contenedor.removeChild(contenedor.children[0]);
   };
 };
 
-window.infoLeo = function () {
+window.infoLeo = function (contenedor) {
   let infoSigno = document.querySelector("#infoSigno");
   let textLeo = `<div class="mt-3">
     <div class="card mb-3">
@@ -239,13 +238,13 @@ window.infoLeo = function () {
             </div>
     <button class="btn btn-danger" onclick="ocultar()">Ocultar</button>
     </div>`;
-  infoSigno.innerHTML += textLeo;
+  contenedor.innerHTML += textLeo;
   window.ocultar = function () {
-    infoSigno.removeChild(infoSigno.children[0]);
+    contenedor.removeChild(contenedor.children[0]);
   };
 };
 
-window.infoVirgo = function () {
+window.infoVirgo = function (contenedor) {
   let infoSigno = document.querySelector("#infoSigno");
   let textVirgo = `<div class="mt-3">
       <div class="card mb-3">
@@ -269,13 +268,13 @@ window.infoVirgo = function () {
               </div>
       <button class="btn btn-danger" onclick="ocultar()">Ocultar</button>
       </div>`;
-  infoSigno.innerHTML += textVirgo;
+  contenedor.innerHTML += textVirgo;
   window.ocultar = function () {
-    infoSigno.removeChild(infoSigno.children[0]);
+    contenedor.removeChild(contenedor.children[0]);
   };
 };
 
-window.infoLibra = function () {
+window.infoLibra = function (contenedor) {
   let infoSigno = document.querySelector("#infoSigno");
   let textLibra = `<div class="mt-3">
       <div class="card mb-3">
@@ -299,13 +298,13 @@ window.infoLibra = function () {
               </div>
       <button class="btn btn-danger" onclick="ocultar()">Ocultar</button>
       </div>`;
-  infoSigno.innerHTML += textLibra;
+  contenedor.innerHTML += textLibra;
   window.ocultar = function () {
-    infoSigno.removeChild(infoSigno.children[0]);
+    contenedor.removeChild(contenedor.children[0]);
   };
 };
 
-window.infoEscorpio = function () {
+window.infoEscorpio = function (contenedor) {
   let infoSigno = document.querySelector("#infoSigno");
   let textEscorpio = `<div class="mt-3">
         <div class="card mb-3">
@@ -329,13 +328,13 @@ window.infoEscorpio = function () {
                 </div>
         <button class="btn btn-danger" onclick="ocultar()">Ocultar</button>
         </div>`;
-  infoSigno.innerHTML += textEscorpio;
+  contenedor.innerHTML += textEscorpio;
   window.ocultar = function () {
-    infoSigno.removeChild(infoSigno.children[0]);
+    contenedor.removeChild(contenedor.children[0]);
   };
 };
 
-window.infoSagitario = function () {
+window.infoSagitario = function (contenedor) {
   let infoSigno = document.querySelector("#infoSigno");
   let textSagitario = `<div class="mt-3">
           <div class="card mb-3">
@@ -358,8 +357,43 @@ window.infoSagitario = function () {
                   </div>
           <button class="btn btn-danger" onclick="ocultar()">Ocultar</button>
           </div>`;
-  infoSigno.innerHTML += textSagitario;
+  contenedor.innerHTML += textSagitario;
   window.ocultar = function () {
-    infoSigno.removeChild(infoSigno.children[0]);
+    contenedor.removeChild(contenedor.children[0]);
   };
 };
+
+let formFecha = document.querySelector("#formFecha");
+let selectFecha = document.querySelector("#fechaNacimiento");
+let infoFecha = document.querySelector('#infoFecha')
+
+formFecha.addEventListener("submit", mostrarSigno);
+
+function mostrarSigno(e) {
+  e.preventDefault();
+  if (selectFecha.value == 1) {
+    infoCapricornio(infoFecha)
+  }else if(selectFecha.value == 2){
+    infoAcuario(infoFecha)
+  }else if (selectFecha.value == 3){
+    infoPiscis(infoFecha)
+  }else if (selectFecha.value == 4){
+    infoAries(infoFecha)
+  }else if (selectFecha.value == 5){
+    infoTauro(infoFecha)
+  }else if (selectFecha.value == 6){
+    infoGeminis(infoFecha)
+  }else if (selectFecha.value == 7){
+    infoCancer(infoFecha)
+  }else if (selectFecha.value == 8){
+    infoLeo(infoFecha)
+  }else if (selectFecha.value == 9){
+    infoVirgo(infoFecha)
+  }else if (selectFecha.value == 10){
+    infoLibra(infoFecha)
+  }else if (selectFecha.value == 11){
+    infoEscorpio(infoFecha)
+  }else if (selectFecha.value == 12){
+    infoSagitario(infoFecha)
+  }
+}
