@@ -29,7 +29,17 @@
     <title>Signos del Zodiaco</title>
   </head>
   <body class="">
-    <header></header>
+    <header>
+      <nav class="navbar bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="#">AstroWeb</a>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Ingresa tu signo" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Busca!</button>
+          </form>
+        </div>
+      </nav>
+    </header>
 
     <main>
       <section class="container text-center mt-5">
@@ -165,7 +175,7 @@
           <aside class="mx-2">
             <form id="formFecha">
               <select
-                class="form-select"
+                class="form-select text-center"
                 aria-label="fecha de nacimiento"
                 id="fechaNacimiento"
               >
@@ -216,7 +226,7 @@
     </main>
 
     <footer class="container text-center mt-5">
-      <p>&copy; Todos los derechos reservados</p>
+      <p class="text-white">&copy; Todos los derechos reservados</p>
     </footer>
 
     <script
