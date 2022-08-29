@@ -3,7 +3,7 @@
 body{
     font-family: 'Inconsolata', monospace;
     background-color: #080d11;
-    background-image: url(../img/diseno-de-galaxia-abstracta-3823.jpg);
+    background-image: url(../img/Galaxy-universe-stars-shine_3840x2160.jpg);
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -31,5 +31,5 @@ p, option, select {
 }
 
 .backgroundDiv {
-    background-image: url(../img/diseno-de-galaxia-abstracta-3823.jpg);
+    background-image: linear-gradient( 135deg, #FFCF71 10%, #2376DD 100%);
 }

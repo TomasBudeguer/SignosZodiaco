@@ -10,7 +10,7 @@ window.infoCapricornio = function (contenedor) {
                 alt="capricornio"
               />
             </div>
-            <div class="col-md-8">
+            <div class="col-md-8 backgroundDiv">
               <div class="card-body">
                 <h3 class="card-title text-dark text-justify">Capricornio</h3>
                 <p class="card-text ">
@@ -46,7 +46,7 @@ window.infoAcuario = function (contenedor) {
                 alt="Acuario"
               />
             </div>
-            <div class="col-md-8">
+            <div class="col-md-8 backgroundDiv">
               <div class="card-body text-justify">
                 <h3 class="card-title text-dark ">Acuario</h3>
                 <p class="card-text">
@@ -76,7 +76,7 @@ window.infoPiscis = function (contenedor) {
                   alt="Piscis"
                 />
               </div>
-              <div class="col-md-8">
+              <div class="col-md-8 backgroundDiv">
                 <div class="card-body text-justify">
                   <h3 class="card-title text-dark">Piscis</h3>
                   <p class="card-text ">
@@ -106,7 +106,7 @@ window.infoAries = function (contenedor) {
                   alt="Aries"
                 />
               </div>
-              <div class="col-md-8">
+              <div class="col-md-8 backgroundDiv">
                 <div class="card-body text-justify">
                   <h3 class="card-title text-dark ">Aries</h3>
                   <p class="card-text ">
@@ -136,7 +136,7 @@ window.infoTauro = function (contenedor) {
                     alt="Tauro"
                   />
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-8 backgroundDiv">
                   <div class="card-body text-justify">
                     <h3 class="card-title text-dark ">Tauro</h3>
                     <p class="card-text ">
@@ -166,7 +166,7 @@ window.infoGeminis = function (contenedor) {
                       alt="Geminis"
                     />
                   </div>
-                  <div class="col-md-8">
+                  <div class="col-md-8 backgroundDiv">
                     <div class="card-body text-justify">
                       <h3 class="card-title text-dark ">Geminis</h3>
                       <p class="card-text ">
@@ -196,7 +196,7 @@ window.infoCancer = function (contenedor) {
                       alt="Cancer"
                     />
                   </div>
-                  <div class="col-md-8">
+                  <div class="col-md-8 backgroundDiv">
                     <div class="card-body">
                       <h3 class="card-title text-dark text-start">Cancer</h3>
                       <p class="card-text ">
@@ -226,7 +226,7 @@ window.infoLeo = function (contenedor) {
                     alt="Leo"
                   />
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-8 backgroundDiv">
                   <div class="card-body text-justify">
                     <h3 class="card-title text-dark ">Leo</h3>
                     <p class="card-text ">
@@ -256,7 +256,7 @@ window.infoVirgo = function (contenedor) {
                       alt="Virgo"
                     />
                   </div>
-                  <div class="col-md-8">
+                  <div class="col-md-8 backgroundDiv">
                     <div class="card-body text-justify">
                       <h3 class="card-title text-dark ">Virgo</h3>
                       <p class="card-text ">
@@ -286,7 +286,7 @@ window.infoLibra = function (contenedor) {
                       alt="Libra"
                     />
                   </div>
-                  <div class="col-md-8">
+                  <div class="col-md-8 backgroundDiv">
                     <div class="card-body text-justify">
                       <h3 class="card-title text-dark ">Libra</h3>
                       <p class="card-text ">
@@ -316,7 +316,7 @@ window.infoEscorpio = function (contenedor) {
                         alt="Escorpio"
                       />
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-md-8 backgroundDiv">
                       <div class="card-body text-justify">
                         <h3 class="card-title text-dark ">Escorpio</h3>
                         <p class="card-text ">
@@ -346,8 +346,8 @@ window.infoSagitario = function (contenedor) {
                           alt="Sagitario"
                         />
                       </div>
-                      <div class="col-md-8">
-                        <div class="card-body text-justify">
+                      <div class="col-md-8 backgroundDiv">
+                        <div class="card-body text-justify ">
                           <h3 class="card-title text-dark ">Sagitario</h3>
                           <p class="card-text ">
                           Sagitario pertenece a los signos mutables y su elemento es el fuego; es uno de los signos más resplandecientes y positivos del zodíaco. También es versátil, adora las aventuras y buscar nuevos horizontes, ya que tiene una mente abierta a nuevas ideas y experiencias y mantiene una actitud decidida ante la adversidad; además, frecuentemente la suerte le acompaña.
@@ -477,4 +477,9 @@ function mostrarElemento(e) {
       infoElemento.removeChild(infoElemento.children[0]);
     };
   }
+  else {
+    alert ("Por favor, seleccione un elemento del listado")
+  }
 }
+
+
