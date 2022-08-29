@@ -4,6 +4,8 @@ body{
     font-family: 'Inconsolata', monospace;
     background-color: #080d11;
     background-image: url(../img/Galaxy-universe-stars-shine_3840x2160.jpg);
+    background-repeat: no-repeat;
+ background-attachment: fixed;
 }
 
 h1,h2,h3,h4,h5,h6{
